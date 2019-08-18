@@ -1,0 +1,28 @@
+.basement {
+    padding: 15px 0;
+    height: 70px;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, .05);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cellar__wrapper {
+    display: flex;
+}
+
+.copyright {
+    margin-right: 681px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.socials__item {
+    min-width: 24px;
+    min-height: 24px;
+    margin-right: 20px;
+}
