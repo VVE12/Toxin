@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+    padding: 0
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0
+}
+
+a {
+    text-decoration: none
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+.nav {
+    padding: 15px 0;
+    height: 70px;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.menu__wrapper {
+    display: flex;
+    align-items: center
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 105.69px;
+    height: 40px;
+    margin-right: 285.31px
+}
+
+.menu {
+    display: flex;
+    align-items: center
+}
+
+.menu__item {
+    min-width: 41px;
+    margin-right: 20px
+}
+
+.menu__item:first-letter {
+    text-transform: capitalize
+}
+
+.menu__item:nth-child(2) {
+    display: flex;
+    align-items: center;
+    min-width: 65px;
+    text-transform: capitalize
+}
+
+.menu__item:nth-child(5) {
+    display: flex;
+    align-items: center;
+    min-width: 107px;
+    text-transform: capitalize
+}
+
+.btn {
+    text-align: center;
+    padding: 9px 0
+}
+
+.btn-signin {
+    width: 87px;
+    height: 34px;
+    border: 2px solid #BC9CFF;
+    color: #BC9CFF;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    margin-right: 20px
+}
+
+.btn-signup {
+    width: 196px;
+    height: 34px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    color: #ffffff;
+    border-radius: 22px;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    -ms-border-radius: 22px;
+    -o-border-radius: 22px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase
+}
+
+.top {
+    background: url("./img/background.svg") no-repeat;
+    background-size: cover
+}
+
+.top__container {
+    padding: 70px 0px 386px 140px
+}
+
+.booking__form {
+    width: 380px;
+    height: 374px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px
+}
+
+.booking__inner {
+    padding: 40px 30px 30px 30px
+}
+
+.booking__title {
+    color: #1F2041;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px
+}
+
+.basement {
+    padding: 15px 0;
+    height: 70px;
+    box-shadow: 0 10px 20px rgba(31, 32, 65, 0.05);
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+.cellar__wrapper {
+    display: flex
+}
+
+.copyright {
+    margin-right: 681px
+}
+
+.socials {
+    display: flex;
+    align-items: center
+}
+
+.socials__item {
+    min-width: 24px;
+    min-height: 24px;
+    margin-right: 20px
+}
