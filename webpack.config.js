@@ -1,62 +1,48 @@
-const path = require('path')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// Webpack v4
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const PATHS = {
+    source: path.join(__dirname, 'src'),
+    build: path.join(__dirname, 'build')
+};
+
 module.exports = {
-    entry: {
-        app: './src/index.js'
-    },
+    entry: PATHS.source + '/index.js',
     output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, './dist'),
-        publicPath: '/dist'
+        path: PATHS.build,
+        filename: '[name].js'
     },
     module: {
         rules: [{
                 test: /\.js$/,
-                loader: 'babel-loader',
-                exclude: '/node_modules'
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
             },
             {
                 test: /\.scss$/,
-                use: [
-                    'style-loader',
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                        options: { sourceMap: true }
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
-                    },
-                    {
-                        loader: 'sass-loader',
-                        options: { sourceMap: true }
-                    }
-                ]
+                use: ExtractTextPlugin.extract({
+                    fallback: 'style-loader',
+                    use: ['css-loader', 'sass-loader']
+                })
             },
             {
-                test: /\.css$/,
-                use: [
-                    'style-loader',
-                    MiniCssExtractPlugin.loader,
-                    {
-                        loader: 'css-loader',
-                        options: { sourceMap: true }
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: { sourceMap: true, config: { path: 'src/js/postcss.config.js' } }
-                    }
-                ]
+                test: /\.pug$/,
+                loader: 'pug-loader',
+                options: {
+                    pretty: true
+                }
             }
         ]
     },
-    devServer: {
-        overlay: true
-    },
     plugins: [
-        new MiniCssExtractPlugin({
-            filename: "[name].css",
-        })
+        new ExtractTextPlugin({ filename: 'style.css', disable: false, allChunks: true }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pug/index.pug',
+            filename: 'index.html'
+        }),
     ]
-}
+};
