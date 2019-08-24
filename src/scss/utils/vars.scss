@@ -1,0 +1,34 @@
+//  Font type
+$firstFont: 'Montserrat-Regular',
+sans-serif;
+$secondFont: 'Montserrat-Bold',
+sans-serif;
+$thirdFont: 'OpenSans-Bold',
+sans-serif;
+//  Primary font colors
+$firstPrimaryFontColor: #1F2041;
+$secondPrimaryFontColor: #BC9CFF;
+$thirdPrimaryFontColor: #FFFFFF;
+$fourthPrimaryFontColor: rgba(31, 32, 65, 0.25);
+$fifthPrimaryFontColor: rgba(31, 32, 65, 0.5);
+$sixthPrimaryFontColor: rgba(31, 32, 65, 0.75);
+$seventhPrimaryFontColor: rgba(31, 32, 65, .05);
+$eighthPrimaryFontColor: rgba(0, 0, 0, 0.12);
+$ninthPrimaryFontColor: rgba(0, 0, 0, 0.2);
+//  Gradient font colors
+$firstGradientFontColor: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+$secondGradientFontColor: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+//  Font style
+$firstFontStyle: normal;
+//  Font weight
+$firstFontWeight: normal;
+$secondFontWeight: bold;
+//  Font line height
+$firstFontLineHeight: 15px;
+$secondFontLineHeight: 17px;
+$thirdFontLineHeight: 24px;
+$fourthFontLineHeight: 30px;
+//  Font size
+$firstFontSize: 12px;
+$secondFontSize: 14px;
+$thirdFontSize: 24px;

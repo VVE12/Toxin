@@ -1,8 +1,9 @@
+//  Header settings
 .nav {
     padding: 15px 0;
     height: 70px;
-    box-shadow: 0 10px 20px rgba(31, 32, 65, .05);
-    background: #FFFFFF;
+    box-shadow: 0 10px 20px $seventhPrimaryFontColor;
+    background: $thirdPrimaryFontColor;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,6 +25,10 @@
 .menu {
     display: flex;
     align-items: center;
+    font-family: $firstFont;
+    font-size: $secondFontSize;
+    line-height: $secondFontLineHeight;
+    color: $fifthPrimaryFontColor;
 }
 
 .menu__item {
@@ -57,18 +62,18 @@
 .btn-signin {
     width: 87px;
     height: 34px;
-    border: 2px solid #BC9CFF;
-    color: #BC9CFF;
+    border: 2px solid $secondPrimaryFontColor;
+    color: $secondPrimaryFontColor;
     border-radius: 22px;
     -webkit-border-radius: 22px;
     -moz-border-radius: 22px;
     -ms-border-radius: 22px;
     -o-border-radius: 22px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-family: $secondFont;
+    font-style: $firstFontStyle;
+    font-weight: $secondFontWeight;
+    font-size: $firstFontSize;
+    line-height: $firstFontLineHeight;
     text-transform: uppercase;
     margin-right: 20px;
 }
@@ -76,17 +81,17 @@
 .btn-signup {
     width: 196px;
     height: 34px;
-    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-    color: #ffffff;
+    background: $firstGradientFontColor;
+    color: $thirdPrimaryFontColor;
     border-radius: 22px;
     -webkit-border-radius: 22px;
     -moz-border-radius: 22px;
     -ms-border-radius: 22px;
     -o-border-radius: 22px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 15px;
+    font-family: $secondFont;
+    font-style: $firstFontStyle;
+    font-weight: $secondFontWeight;
+    font-size: $firstFontSize;
+    line-height: $firstFontLineHeight;
     text-transform: uppercase;
 }

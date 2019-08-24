@@ -1,8 +1,13 @@
+//  Footer settings
+footer {
+    border-top: 1px solid $fifthPrimaryFontColor;
+}
+
 .basement {
     padding: 15px 0;
     height: 70px;
-    box-shadow: 0 10px 20px rgba(31, 32, 65, .05);
-    background: #FFFFFF;
+    box-shadow: 0 10px 20px $seventhPrimaryFontColor;
+    background: $thirdPrimaryFontColor;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -14,6 +19,12 @@
 
 .copyright {
     margin-right: 681px;
+    font-family: $firstFont;
+    font-style: $firstFontStyle;
+    font-weight: $firstFontWeight;
+    font-size: $secondFontSize;
+    line-height: $secondFontLineHeight;
+    color: $sixthPrimaryFontColor;
 }
 
 .socials {

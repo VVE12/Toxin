@@ -1,3 +1,13 @@
+//  Imports
+//  Utils
+@import "utils/vars.scss";
+@import "utils/fonts.scss";
+//  Modules
+@import "modules/header.scss";
+@import "modules/top.scss";
+@import "modules/bottom.scss";
+@import "modules/footer.scss";
+//  Main settings
 body {
     margin: 0;
     padding: 0;
@@ -18,8 +28,28 @@ h6 {
     margin: 0;
 }
 
-a {
+h1 {
+    font-family: $thirdFont;
+    color: $firstPrimaryFontColor;
+    font-size: $thirdFontSize;
+    font-style: $firstFontStyle;
+    line-height: $fourthFontLineHeight;
+}
+
+h3 {
+    font-family: $secondFont;
+    text-transform: uppercase;
+    color: $firstPrimaryFontColor;
+    font-size: $firstFontSize;
+    font-style: $firstFontStyle;
+    line-height: $firstFontLineHeight;
+}
+
+a,
+a:hover,
+a:focus {
     text-decoration: none;
+    color: $fifthPrimaryFontColor;
 }
 
 ul,
@@ -33,8 +63,3 @@ li {
     max-width: 1440px;
     margin: 0 auto;
 }
-
-// Modules
-@import "modules/header.scss";
-@import "modules/top.scss";
-@import "modules/footer.scss";

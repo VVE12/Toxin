@@ -1,3 +1,4 @@
+//  Top settings
 .top {
     background: url("/src/img/background.svg")no-repeat;
     background-size: cover;
@@ -10,10 +11,10 @@
 .booking__form {
     width: 380px;
     height: 374px;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.12);
+    background: $thirdPrimaryFontColor;
+    border: 1px solid $eighthPrimaryFontColor;
     box-sizing: border-box;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 25px $ninthPrimaryFontColor;
     border-radius: 4px;
 }
 
@@ -22,8 +23,8 @@
 }
 
 .booking__title {
-    color: #1F2041;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+    color: $firstPrimaryFontColor;
+    font-weight: $secondFontWeight;
+    font-size: $thirdFontSize;
+    line-height: $fourthFontLineHeight;
 }
