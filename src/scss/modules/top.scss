@@ -28,3 +28,60 @@
     font-size: $thirdFontSize;
     line-height: $fourthFontLineHeight;
 }
+
+.booking__date {
+    display: flex;
+    margin-top: 20px;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-dropdown__container {
+    display: flex;
+}
+
+.form-dropdown__right {
+    margin-left: 20px;
+}
+
+.datepicker__container {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.date-picker__title {
+    display: flex;
+    flex-direction: column;
+    font-family: $secondFont;
+    font-size: $firstFontSize;
+}
+
+.js-datepicker {
+    max-width: 150px!important;
+    width: 100%;
+    background: url("/src/img/expand_more.svg") no-repeat 90% 50%!important;
+    cursor: pointer;
+    margin-top: 5px;
+    font-family: $firstFont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: $secondFontSize;
+    line-height: 18px;
+    color: rgba(31, 32, 65, .75);
+    margin-top: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid rgba(31, 32, 65, .25);
+    border-radius: 4px;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    transition: .3s;
+}
