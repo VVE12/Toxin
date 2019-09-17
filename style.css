@@ -1,25 +1,19 @@
 @font-face {
-    font-family: 'Montserrat-Regular';
-    font-style: normal;
+    font-family: "Montserrat-Regular";
     font-weight: 400;
-    src: url("../fonts/Montserrat-Regular/montserrat-v14-cyrillic_latin-regular.eot");
-    src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../fonts/Montserrat-Regular/montserrat-v14-cyrillic_latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular/montserrat-v14-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular/montserrat-v14-cyrillic_latin-regular.woff") format("woff"), url("../fonts/Montserrat-Regular/montserrat-v14-cyrillic_latin-regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular/montserrat-v14-cyrillic_latin-regular.svg#Montserrat") format("svg")
+    font-style: normal;
+    src: url("/src/fonts/Montserrat-Regular/Montserrat-Regular.eot");
+    src: local("Montserrat Regular"), local("Montserrat-Regular"), url("/src/fonts/Montserrat-Regular/Montserrat-Regular.eot?#iefix") format("embedded-opentype") url("/src/fonts/Montserrat-Regular/Montserrat-Regular.woff") format("woff"), url("/src/fonts/Montserrat-Regular/Montserrat-Regular.ttf") format("truetype"), url("/src/fonts/Montserrat-Regular/Montserrat-Regular.svg") format("svg")
 }
 
 @font-face {
-    font-family: 'Montserrat-Bold';
-    font-style: normal;
-    font-weight: 400;
-    src: url("/src/fonts/Montserrat-Bold/montserrat-v14-cyrillic_latin-700.eot");
-    src: local("Montserrat Bold"), local("Montserrat-Bold"), url("/src/fonts/Montserrat-Bold/montserrat-v14-cyrillic_latin-700.eot?#iefix") format("embedded-opentype"), url("/src/fonts/Montserrat-Bold/montserrat-v14-cyrillic_latin-700.woff2") format("woff2"), url("/src/fonts/Montserrat-Bold/montserrat-v14-cyrillic_latin-700.woff") format("woff"), url("/src/fonts/Montserrat-Bold/montserrat-v14-cyrillic_latin-700.ttf") format("truetype"), url("/src/fonts/Montserrat-Bold/montserrat-v14-cyrillic_latin-700.svg#Montserrat") format("svg")
+    font-family: "Montserrat-Bold";
+    src: url("/src/fonts/Montserrat-Bold/Montserrat-Bold.eot"), url("/src/fonts/Montserrat-Bold/Montserrat-Bold.woff") format("woff"), url("/src/fonts/Montserrat-Bold/Montserrat-Bold.ttf") format("truetype"), url("/src/fonts/Montserrat-Bold/Montserrat-Bold.svg") format("svg")
 }
 
 @font-face {
-    font-family: 'OpenSans-Bold';
-    font-style: normal;
-    font-weight: 400;
-    src: url("/src/fonts/OpenSans-Bold/open-sans-v17-cyrillic_latin-700.eot");
-    src: local("OpenSans Bold"), local("OpenSans-Bold"), url("/src/fonts/OpenSans-Bold/open-sans-v17-cyrillic_latin-700.eot?#iefix") format("embedded-opentype"), url("/src/fonts/OpenSans-Bold/open-sans-v17-cyrillic_latin-700.woff2") format("woff2"), url("/src/fonts/OpenSans-Bold/open-sans-v17-cyrillic_latin-700.woff") format("woff"), url("/src/fonts/OpenSans-Bold/open-sans-v17-cyrillic_latin-700.ttf") format("truetype"), url("/src/fonts/OpenSans-Bold/open-sans-v17-cyrillic_latin-700.svg#OpenSans") format("svg")
+    font-family: "OpenSans-Bold";
+    src: url("/src/fonts/OpenSans-Bold/OpenSans-Bold.eot"), url("/src/fonts/OpenSans-Bold/OpenSans-Bold.woff") format("woff"), url("/src/fonts/OpenSans-Bold/OpenSans-Bold.ttf") format("truetype"), url("/src/fonts/OpenSans-Bold/OpenSans-Bold.svg") format("svg")
 }
 
 .nav {
@@ -47,11 +41,7 @@
 
 .menu {
     display: flex;
-    align-items: center;
-    font-family: "Montserrat-Regular", sans-serif;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(31, 32, 65, 0.5)
+    align-items: center
 }
 
 .menu__item {
@@ -92,7 +82,7 @@
     -moz-border-radius: 22px;
     -ms-border-radius: 22px;
     -o-border-radius: 22px;
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: "Montserrat-Regular", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -111,7 +101,7 @@
     -moz-border-radius: 22px;
     -ms-border-radius: 22px;
     -o-border-radius: 22px;
-    font-family: "Montserrat-Bold", sans-serif;
+    font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -120,7 +110,7 @@
 }
 
 .top {
-    background: url("../img/background.svg") no-repeat;
+    background: url("./img/background.svg") no-repeat;
     background-size: cover
 }
 
@@ -131,7 +121,7 @@
 .booking__form {
     width: 380px;
     height: 374px;
-    background: #fff;
+    background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
@@ -149,13 +139,6 @@
     line-height: 30px
 }
 
-.bottom {
-    font-family: "Montserrat-Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px
-}
-
 .bottom__container {
     display: flex;
     margin: 100px 140px
@@ -167,6 +150,10 @@
     max-height: 132px;
     height: 100%;
     margin-right: 40px;
+    font-family: "Montserrat-Regular", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75)
 }
@@ -175,15 +162,8 @@
     max-width: 143px;
     width: 100%;
     max-height: 168px;
-    height: 100%;
-    margin-right: 57px;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(31, 32, 65, 0.5)
-}
-
-p:first-letter {
-    text-transform: capitalize
+    width: 100%;
+    margin-right: 57px
 }
 
 .third__block {
@@ -191,10 +171,7 @@ p:first-letter {
     width: 100%;
     max-height: 168px;
     height: 100%;
-    margin-right: 92px;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(31, 32, 65, 0.5)
+    margin-right: 92px
 }
 
 .fourth__block {
@@ -202,10 +179,7 @@ p:first-letter {
     width: 100%;
     max-height: 130px;
     height: 100%;
-    margin-right: 51px;
-    font-size: 14px;
-    line-height: 17px;
-    color: rgba(31, 32, 65, 0.5)
+    margin-right: 51px
 }
 
 .fifth__block {
@@ -233,17 +207,12 @@ p:first-letter {
     height: 44px;
     background: #fff;
     border: 1px solid rgba(31, 32, 65, 0.25);
-    font-family: "Montserrat-Regular", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
     box-sizing: border-box;
     border-radius: 4px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
-    padding: 10px 0px 10px 15px
+    padding: 12px 0px 8px 15px
 }
 
 .btn-outline-third,
@@ -317,25 +286,13 @@ h6 {
     margin: 0
 }
 
-h1 {
-    font-family: "OpenSans-Bold", sans-serif;
-    color: #1F2041;
-    font-size: 24px;
-    font-style: normal;
-    line-height: 30px
-}
-
-h3 {
+h2 {
     font-family: "Montserrat-Bold", sans-serif;
     text-transform: uppercase;
     color: #1F2041;
     font-size: 12px;
     font-style: normal;
     line-height: 15px
-}
-
-p {
-    font-family: "Montserrat-Regular", sans-serif;
 }
 
 a,

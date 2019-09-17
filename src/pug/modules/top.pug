@@ -2,67 +2,66 @@ section.top
     .container
         .top__container
             .booking__form
-                .booking__inner
-                    .booking__title
-                        h1 &Ncy;&acy;&jcy;&dcy;&iocy;&mcy; &ncy;&ocy;&mcy;&iecy;&rcy;&acy; &pcy;&ocy;&dcy; &vcy;&acy;&shcy;&icy; &pcy;&ocy;&zhcy;&iecy;&lcy;&acy;&ncy;&icy;&yacy;
-                    .booking__date
-                        .datepicker__container
-                            label.date-picker__title.date-picker__left(for='datepicker')
+                .booking__title
+                    h1 &Ncy;&acy;&jcy;&dcy;&iocy;&mcy; &ncy;&ocy;&mcy;&iecy;&rcy;&acy; &pcy;&ocy;&dcy; &vcy;&acy;&shcy;&icy; &pcy;&ocy;&zhcy;&iecy;&lcy;&acy;&ncy;&icy;&yacy;
+                .booking__date
+                    form.datepicker__container
+                            label.date-picker__title.date-picker__left
                                 | ПРИБЫТИЕ
-                                input#start.js-datepicker(type='text', data-range='true', placeholder='ДД.ММ.ГГГГ')
-                            label.date-picker__title.date-picker__right(for='datepicker')
+                                input#start.form__field.js-datepicker(autocomplete='off', type='text', name='data',  placeholder='ДД.ММ.ГГГГ', readonly='')
+                            label.date-picker__title.date-picker__right
                                 | ВЫЕЗД
-                                input#end.js-datepicker(type='text', data-range='true', placeholder='ДД.ММ.ГГГГ')
-                    .booking__guests
-                        .inner-form__container
-                            .booking__title &gcy;&ocy;&scy;&tcy;&icy;
-                            |   &#x9;
-                            .dropdown__wrapper
-                                .form__field.dropdown__header
-                                    span.dropdown__header-text &Scy;&kcy;&ocy;&lcy;&softcy;&kcy;&ocy; &gcy;&ocy;&scy;&tcy;&iecy;&jcy;
-                                    |   &#x9;&#x9;  
-                                    i.material-icons.dropdown__header-icon expand_more
+                                input#end.form__field.js-datepicker(autocomplete='off', type='text', name='data',  placeholder='ДД.ММ.ГГГГ', readonly='')
+                .booking__guests
+                    .inner-form__container
+                        .date-picker__title &gcy;&ocy;&scy;&tcy;&icy;
+                        |   &#x9;
+                        .dropdown__wrapper
+                            .form__field.dropdown__header
+                                span.dropdown__header-text &Scy;&kcy;&ocy;&lcy;&softcy;&kcy;&ocy; &gcy;&ocy;&scy;&tcy;&iecy;&jcy;
+                                |   &#x9;&#x9;  
+                                .dropdown__header-icon
+                            |   &#x9;&#x9;
+                            .dropdown__body
+                                .dropdown__body-item
+                                    span &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&ycy;&iecy;
+                                    |   &#x9;&#x9;
+                                    .dropdown__select
+                                        .dropdown__select-button.minus -
+                                        |   &#x9;&#x9;&#x9;  
+                                        .dropdown__value 0
+                                        |   &#x9;&#x9;&#x9;  
+                                        .dropdown__select-button.plus +
                                 |   &#x9;&#x9;
-                                .dropdown__body
-                                    .dropdown__body-item
-                                        span &vcy;&zcy;&rcy;&ocy;&scy;&lcy;&ycy;&iecy;
-                                        |   &#x9;&#x9;
-                                        .dropdown__select
-                                            .dropdown__select-button.minus -
-                                            |   &#x9;&#x9;&#x9;  
-                                            .dropdown__value 0
-                                            |   &#x9;&#x9;&#x9;  
-                                            .dropdown__select-button.plus +
+                                .dropdown__body-item
+                                    span &dcy;&iecy;&tcy;&icy;
+                                    |   &#x9;&#x9;    
+                                    .dropdown__select
+                                        .dropdown__select-button.minus -
+                                        |   &#x9;&#x9;      
+                                        .dropdown__value 0
+                                        |   &#x9;&#x9;      
+                                        .dropdown__select-button.plus +
+                                |   &#x9;&#x9;
+                                .dropdown__body-item
+                                    span &mcy;&lcy;&acy;&dcy;&iecy;&ncy;&tscy;&ycy;
                                     |   &#x9;&#x9;
-                                    .dropdown__body-item
-                                        span &dcy;&iecy;&tcy;&icy;
-                                        |   &#x9;&#x9;    
-                                        .dropdown__select
-                                            .dropdown__select-button.minus -
-                                            |   &#x9;&#x9;      
-                                            .dropdown__value 0
-                                            |   &#x9;&#x9;      
-                                            .dropdown__select-button.plus +
-                                    |   &#x9;&#x9;
-                                    .dropdown__body-item
-                                        span &mcy;&lcy;&acy;&dcy;&iecy;&ncy;&tscy;&ycy;
-                                        |   &#x9;&#x9;
-                                        .dropdown__select
-                                            .dropdown__select-button.minus -
-                                            |   &#x9;&#x9;&#x9;  
-                                            .dropdown__value 0
-                                            |   &#x9;&#x9;&#x9;  
-                                            .dropdown__select-button.plus +
-                                    |   &#x9;&#x9;
-                                    .dropdown__buttons
-                                        button.dropdown__button.dropdown__button--clear &ocy;&chcy;&icy;&scy;&tcy;&icy;&tcy;&softcy;
-                                        |   &#x9;&#x9;  
-                                        button.dropdown__button.dropdown__button--accept &pcy;&rcy;&icy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;
-                    .booking__button
-                        .button__container
-                            button.button.button--forward
-                                | &pcy;&ocy;&dcy;&ocy;&bcy;&rcy;&acy;&tcy;&softcy; &ncy;&ocy;&mcy;&iecy;&rcy;
-                                .button__arrow
-                                    i.material-icons arrow_forward
-
+                                    .dropdown__select
+                                        .dropdown__select-button.minus -
+                                        |   &#x9;&#x9;&#x9;  
+                                        .dropdown__value 0
+                                        |   &#x9;&#x9;&#x9;  
+                                        .dropdown__select-button.plus +
+                                |   &#x9;&#x9;
+                                .dropdown__buttons
+                                    button.dropdown__button.dropdown__button--clear &ocy;&chcy;&icy;&scy;&tcy;&icy;&tcy;&softcy;
+                                    |   &#x9;&#x9;  
+                                    button.dropdown__button.dropdown__button--accept &pcy;&rcy;&icy;&mcy;&iecy;&ncy;&icy;&tcy;&softcy;
+                .booking__button
+                    .button__container
+                        button.button.button--forward
+                            | &pcy;&ocy;&dcy;&ocy;&bcy;&rcy;&acy;&tcy;&softcy; &ncy;&ocy;&mcy;&iecy;&rcy;
+                            .button__arrow
+                                i.material-icons
+            span.top__text Лучшие номера для вашей работы, отдыха и просто вдохновения
 

@@ -61,14 +61,14 @@
             <h1>&Ncy;&acy;&jcy;&dcy;&iocy;&mcy; &ncy;&ocy;&mcy;&iecy;&rcy;&acy; &pcy;&ocy;&dcy; &vcy;&acy;&shcy;&icy; &pcy;&ocy;&zhcy;&iecy;&lcy;&acy;&ncy;&icy;&yacy;</h1>
           </div>
           <div class="booking__date">
-            <form class="form-dropdown__container">
-              <label class="booking__title form-dropdown__left">&pcy;&rcy;&icy;&bcy;&ycy;&tcy;&icy;&iecy;
-                <input class="input__field" autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ" readonly="">
+            <div class="datepicker__container">
+              <label class="date-picker__title date-picker__left" for="datepicker">ПРИБЫТИЕ
+                <input class="js-datepicker" id="start" type="text" data-range="true" placeholder="ДД.ММ.ГГГГ">
               </label>
-              <label class="booking__title form-dropdown__right">&vcy;&ycy;&iecy;&zcy;&dcy;
-                <input class="input__field" autocomplete="off" type="text" name="data" placeholder="ДД.ММ.ГГГГ" readonly="">
+              <label class="date-picker__title date-picker__right" for="datepicker">ВЫЕЗД
+                <input class="js-datepicker" id="end" type="text" data-range="true" placeholder="ДД.ММ.ГГГГ">
               </label>
-            </form>
+            </div>
           </div>
           <div class="booking__guests">
             <div class="inner-form__container">

@@ -219,10 +219,11 @@
 }
 
 .datepicker--days-names {
-    font-family: Montserrat Bold, sans-serif;
+    font-family: $secondFont;
     font-size: 12px;
     line-height: 15px;
-    color: #1f2041;
+    color: $firstPrimaryFontColor;
+    text-transform: capitalize;
     flex-wrap: nowrap;
     width: 279.13px;
     margin-bottom: 11px;
@@ -236,11 +237,7 @@
 }
 
 .datepicker--day-name {
-    font-family: Montserrat Bold, sans-serif;
     color: #bc9cff;
-    font-size: 12px;
-    line-height: 15px;
-    text-transform: capitalize;
     width: 39.88px;
     max-width: 39.88px;
     min-width: 39.88px;
@@ -258,12 +255,19 @@
     -ms-flex: 1;
     flex: 1;
     text-align: center;
-    text-transform: uppercase;
     font-size: .8em;
 }
 
 .datepicker--cell-day {
     width: 14.28571%;
+}
+
+.datepicker--cells-days {
+    font-family: $firstFont;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: rgba(31, 32, 65, .5);
 }
 
 .datepicker--cells-months {
@@ -672,6 +676,9 @@
 }
 
 .datepicker--button {
+    font-family: $secondFont;
+    font-size: 12px;
+    line-height: 15px;
     color: rgba(31, 32, 65, .5);
     /*color: #4EB5E6;*/
     cursor: pointer;

@@ -1,7 +1,10 @@
 //  Top settings
 .top {
-    background: url("/src/img/background.svg")no-repeat;
+    background: url("/src/img/background.svg")no-repeat 0 100%;
     background-size: cover;
+    width: 100%;
+    height: 830px;
+    position: relative;
 }
 
 .top__container {
@@ -10,16 +13,11 @@
 
 .booking__form {
     width: 380px;
-    height: 374px;
+    padding: 40px 30px 30px;
     background: $thirdPrimaryFontColor;
-    border: 1px solid $eighthPrimaryFontColor;
     box-sizing: border-box;
-    box-shadow: 0px 0px 25px $ninthPrimaryFontColor;
+    box-shadow: 0 0 25px $ninthPrimaryFontColor;
     border-radius: 4px;
-}
-
-.booking__inner {
-    padding: 40px 30px 30px 30px;
 }
 
 .booking__title {
@@ -30,6 +28,12 @@
 }
 
 .booking__date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.booking__guests {
     display: flex;
     margin-top: 20px;
 }
@@ -49,8 +53,7 @@
 
 .datepicker__container {
     display: flex;
-    width: 320px;
-    justify-content: space-between;
+    position: relative;
 }
 
 .date-picker__title {
@@ -58,10 +61,27 @@
     flex-direction: column;
     font-family: $secondFont;
     font-size: $firstFontSize;
+    color: $firstPrimaryFontColor;
+    text-transform: uppercase;
+}
+
+.form__field {
+    background: url("/src/img/expand_more.svg") no-repeat 90% 50%!important;
+    margin-top: 5px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 320px;
+    height: 44px;
+    background: $thirdPrimaryFontColor;
+    border: 1px solid $fourthPrimaryFontColor;
+    border-radius: 4px;
+    outline: none;
+    font-family: $firstFont;
+    transition: .3s;
 }
 
 .js-datepicker {
-    max-width: 150px!important;
     width: 100%;
     background: url("/src/img/expand_more.svg") no-repeat 90% 50%!important;
     cursor: pointer;
@@ -71,17 +91,102 @@
     font-weight: 400;
     font-size: $secondFontSize;
     line-height: 18px;
-    color: rgba(31, 32, 65, .75);
-    margin-top: 5px;
-    padding-left: 15px;
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 320px;
+    color: $sixthPrimaryFontColor;
+}
+
+.booking__button {
+    margin-top: 31px;
+}
+
+.button {
     height: 44px;
-    background: #fff;
-    border: 1px solid rgba(31, 32, 65, .25);
-    border-radius: 4px;
-    outline: none;
-    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+    font-family: $secondFont!important;
+    font-size: $firstFontSize;
+    line-height: $firstFontLineHeight;
+    color: $firstPrimaryFontColor;
+    text-transform: uppercase;
+    border-radius: 22px;
+    color: $thirdPrimaryFontColor;
+    border: none;
+    background: $firstGradientFontColor;
     transition: .3s;
+    cursor: pointer;
+    padding: 0 20px;
+    font-family: $firstFont;
+}
+
+.button--forward {
+    width: 100%;
+    padding: 0;
+    position: relative;
+}
+
+.button--forward,
+.button__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button__arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+    right: 0;
+}
+
+i.material-icons {
+    background: url("/src/img/arrow_forward_white.svg") no-repeat 90% 50% !important;
+    height: 44px;
+    width: 44px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.inner-form__container {
+    max-width: 320px;
+    width: 100%;
+}
+
+.dropdown__body {
+    display: none;
+}
+
+.dropdown__header {
+    background: url("/src/img/expand_more.svg") no-repeat 96% 50% !important;
+    height: 46px;
+    border-color: $fifthPrimaryFontColor;
+    cursor: pointer;
+    justify-content: space-between;
+    padding-right: 0;
+    font-family: $firstFont;
+    font-size: 14px;
+    line-height: 18px;
+    user-select: none;
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.date-picker__right {
+    margin-left: 20px;
+    position: relative;
+}
+
+span.top__text {
+    display: inline-block;
+    width: 297px;
+    font-family: $firstFont;
+    font-size: 14px;
+    line-height: 24px;
+    color: $sixthPrimaryFontColor;
+    text-align: right;
+    position: absolute;
+    bottom: 21px;
+    right: 134px;
 }

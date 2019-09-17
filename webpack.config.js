@@ -2,7 +2,8 @@
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
 
 const PATHS = {
     source: path.join(__dirname, 'src'),
@@ -45,6 +46,13 @@ module.exports = {
                 })
             },
             {
+                test: /\.css$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    "css-loader"
+                ]
+            },
+            {
                 test: /\.pug$/,
                 loader: 'pug-loader',
                 options: {
@@ -58,6 +66,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: PATHS.source + '/pug/index.pug',
             filename: 'index.html'
+        }),
+        new MiniCssExtractPlugin({
+            filename: '[name].css',
         }),
         new webpack.ProvidePlugin({
             $: 'jquery',
